@@ -1,0 +1,41 @@
+<mat-sidenav-container class="main-sidebar-container">
+  <mat-sidenav class="main-sidebar" mode="side" [opened]="sidebarOpened">
+    <mat-toolbar class="ma-sidebar-toolbar">
+      Material Admin
+    </mat-toolbar>
+
+
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <div class="content">
+      <mat-toolbar class="ma-main-toolbar">
+        <button mat-icon-button (click)="toggleSidebar()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Dashboard</span>
+      </mat-toolbar>
+
+      <div class="grid">
+        <mat-grid-list [cols]="4" rowHeight="100px">
+          <mat-grid-tile class="dash-item">
+            <h4>Hello World</h4>
+          </mat-grid-tile>
+          <mat-grid-tile class="dash-item">
+            <h4>Hello World</h4>
+          </mat-grid-tile>
+          <mat-grid-tile class="dash-item">
+            <h4>Hello World</h4>
+          </mat-grid-tile>
+          <mat-grid-tile class="dash-item">
+            <h4>Hello World</h4>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
